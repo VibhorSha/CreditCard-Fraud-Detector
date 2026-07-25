@@ -1,0 +1,24 @@
+# Core Data Processing
+pandas==2.2.1
+numpy==1.26.4
+pyarrow==15.0.0
+requests==2.31.0
+pyyaml==6.0.1
+
+# ML & Experiment Tracking
+xgboost==2.0.3
+scikit-learn==1.4.1.post1
+mlflow==2.11.1
+
+# Backend API
+fastapi==0.110.0
+uvicorn==0.28.0
+pydantic==2.6.4
+
+# Database & ORM
+sqlalchemy==2.0.28
+psycopg2-binary==2.9.9
+
+# Utility & Testing
+pytest==8.0.2
+python-dotenv==1.0.1

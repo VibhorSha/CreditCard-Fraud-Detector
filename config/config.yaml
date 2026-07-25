@@ -1,0 +1,33 @@
+# Enterprise Configuration Contract
+project:
+  name: "financial-fraud-detector"
+  version: "1.0.0"
+
+# Storage & File Paths
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  raw_file_name: "raw_transactions.parquet"
+  processed_file_name: "features.parquet"
+  
+# (Deprecated) Old External API Ingestion Config
+ingestion:
+  start_date: "2018-04-01"
+  num_days: 30
+  base_url: "https://raw.githubusercontent.com/Fraud-Detection-Handbook/simulated-data-raw/main/data/"
+  max_retries: 3
+  timeout_seconds: 10
+
+# Transformation & Feature Engineering
+features:
+  rolling_windows_days: [1, 7, 30]
+
+# Synthetic Data Generation Parameters
+simulation:
+  n_customers: 5000
+  n_terminals: 10000
+  radius: 50
+  start_date: "2018-04-01"
+  num_days: 30
+  random_state: 42
+

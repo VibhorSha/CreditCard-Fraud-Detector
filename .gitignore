@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Data & Models (Keep storage clean)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+mlruns/
+*.pkl
+*.parquet
+
+# Environment & Secrets
+.env
+*.log
+
+# IDE & OS
+.vscode/
+.DS_Store

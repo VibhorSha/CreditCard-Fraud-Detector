@@ -79,7 +79,7 @@ if __name__ == "__main__":
     downloader = FraudDataDownloader(base_url=HANDBOOK_BASE_URL)
     
     # Let's pull the data
-    compiled_data = downloader.fetch_and_compile(start_date_str="2018-04-01", days=30)
+    compiled_data = downloader.fetch_and_compile(start_date_str="2018-04-01", days=150)
     
     output_path = downloader.raw_dir / "simulated_transactions.parquet"
     logger.info(f"Converting and saving to Parquet format at {output_path}...")
